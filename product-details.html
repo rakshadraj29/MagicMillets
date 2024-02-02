@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Magic Millets</title>
+
+  <!-- 
+    - favicon
+  -->
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #bd752d;
+    }
+
+    header {
+      background-color: #343a40;
+      color: rgb(118, 9, 9);
+      padding: 10px;
+      text-align: center;
+    }
+
+    section {
+      margin: 20px;
+      padding: 20px;
+      background-color: #a51616;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      color: #343a40;
+    }
+
+    p {
+      color: #0b7696;
+    }
+
+    ul {
+      list-style-type: disc;
+      margin-left: 20px;
+      color: #660000;
+    }
+  </style>
+  
+
+  <!-- Bootstrap CSS from CDN -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <!-- Your custom CSS file -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Add more head elements if needed -->
+</head>
+<body>
+
+  <!-- Your HTML structure -->
+
+  <!-- Header with Back Button and Bootstrap Navbar -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="./index.html">Magic<span class="span"> Millets</span></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <button onclick="goBack()" class="btn btn-secondary">Back</button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Product Description Dropdown with Bootstrap Card -->
+  <div class="container mt-4">
+    <div class="card">
+      <div class="card-header">
+        <input type="checkbox" id="product-description-toggle" class="product-description-toggle">
+        <label for="product-description-toggle" class="product-description-label">Product Description</label>
+      </div>
+      <div class="card-body product-description-content">
+        <p class="card-text">
+        Magic Millets  a nutritious blend crafted with care, incorporating a diverse selection of 50 varieties of millets. Millets, known for their exceptional nutritional profile, are ancient grains that have sustained civilizations for centuries. Our Millets Powder is a powerhouse of health, offering a rich tapestry of flavors and benefits
+        </p>
+        <div class="container mt-4">
+          <div class="card">
+            <div class="card-header">
+        <input type="checkbox" id="product-description-toggle" class="product-description-toggle">
+        <label for="product-description-toggle" class="product-description-label">50 varieties of Millets are added </label>
+      </div>
+        <div class="card-body product-description-content">
+          <p class="card-text">
+        1. Pearl Millet (Bajra)
+2. Finger Millet (Ragi)
+3. Foxtail Millet
+4. Little Millet
+5. Proso Millet
+6. Kodo Millet
+7. Barnyard Millet
+8. Sorghum (Jowar)
+9. Browntop Millet (Korle)
+10. Italian Millet (Setaria italica)
+11. Teff
+12. Job's Tears (Adlay Millet)
+13. Japanese Millet
+14. Indian Barnyard Millet (Sanwa)
+15. Guineagrass Millet (Guinea Millet)
+16. Browntop Millet (Brachiaria ramosa)
+17. Himalayan Barley (Naked Barley)
+18. German Millet
+19. African Finger Millet (Eleusine coracana)
+20. Japanese Barnyard Millet
+21. Black Millet
+22. White Fonio (Acha)
+23. Yellow Foxtail Millet
+24. Brown Top Millet (Urochloa ramosa)
+25. Indian Little Millet (Kutki)
+26. Indian Foxtail Millet (Kangni)
+27. Indian Proso Millet (Cheena)
+28. Indian Kodo Millet (Koden)
+29. Indian Browntop Millet (Korale)
+30. Indian Italian Millet (Italica)
+31. Indian Sorghum (Jowari)
+32. Indian Japanese Millet (Sama)
+33. Indian Guinea Millet (Sawa)
+34. Indian German Millet
+35. Indian Japanese Barnyard Millet
+36. Indian Finger Millet (Nachni)
+37. Indian Teff
+38. Indian Job's Tears (Adlay Millet)
+39. Indian Himalayan Barley
+40. Indian Guineagrass Millet
+41. Indian Browntop Millet (Brachiaria ramosa)
+42. Indian Black Millet
+43. Indian White Fonio (Acha)
+44. Indian Yellow Foxtail Millet
+45. Indian Brown Top Millet (Urochloa ramosa)
+46. Finger Millet (Ragi) - Wild Type
+47. Foxtail Millet - Wild Type
+48. Proso Millet - Wild Type
+49. Kodo Millet - Wild Type
+50. Barnyard Millet - Wild Type
+
+* 15gm - proteins
+*0.05gm -carbohydrate
+*0.0-  Sugar
+      </div>
+    </div>
+  </div>
+
+  <!-- Image with Bootstrap Responsive Class -->
+  <div class="container mt-4">
+    <img src="./assets/images/health Millets.jpg" alt="Non-starchy vegetables" class="img-fluid">
+  </div>
+
+  <!-- Back to Top Button -->
+  <a href="#top" class="back-to-top" aria-label="Back to Top" data-back-top-btn>
+    <ion-icon name="arrow-up-outline"></ion-icon>
+  </a>
+
+  <!-- Bootstrap JS from CDN -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <!-- Your other HTML content -->
+
+  <!-- JavaScript to handle the back button -->
+  <script>
+    function goBack() {
+      window.history.back();
+    }
+  </script>
+</body>
+</html>
